@@ -133,7 +133,7 @@ class Job {
         this.deployProject = "${this.edpName}-${this.pipelineName}-${stageName}"
         this.codebasesList = getCodebaseFromAdminConsole()
         this.ciProject = getParameterValue("CI_NAMESPACE")
-        this.deployTimeout = getParameterValue("DEPLOY_TIMEOUT", "900s")
+        this.deployTimeout = getParameterValue("DEPLOY_TIMEOUT", "300s")
         this.manualApproveStageTimeout = getParameterValue("MANUAL_APPROVE_TIMEOUT", "10")
         this.autodeployTimeout = getParameterValue("AUTODEPLOY_TIMEOUT", "5")
         this.autodeployLatestVersions = getParameterValue("AUTODEPLOY_LATEST_VERSIONS", false)
